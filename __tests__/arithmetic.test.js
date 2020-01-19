@@ -5,7 +5,7 @@ const arithmetic = require('../src/arithmetic.js');
 describe('Arithmetic Module', () => {
   describe('param validation', () => {
     it(`add() disallows strings`, () => {
-      expect(arithmetic.add('foo', 4)).toBeEqual(1000);
+      expect(arithmetic.add('foo', 4)).toBeNull();
     });
     it(`add() disallows arrays`, () => {
       expect(arithmetic.add([], 4)).toBeNull();
